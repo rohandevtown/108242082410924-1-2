@@ -27,6 +27,50 @@
   </head>
 
   <body>
+    <!--Open Task Modal Btn -->
+    <!-- <button
+      type="button"
+      class="btn btn-primary"
+      data-bs-toggle="modal"
+      data-bs-target="#showTask"
+    >
+      Open Task
+    </button> -->
+
+    <!-- Open Task Modal Modal -->
+    <div
+      class="modal fade"
+      id="showTask"
+      tabindex="-1"
+      aria-labelledby="showTaskLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="showTaskLabel">Task Details</h1>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body task__modal_body"></div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal"
+            >
+              Close
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Mobile screen btn -->
     <div class="add_new_mobile_btn">
       <button
         class="btn btn-primary d-flex gap-2 align-items-center"
@@ -179,7 +223,7 @@
 
       <section class="mt-4">
         <div class="row task__contents">
-          <h5>Dynamic Cards</h5>
+          <!-- <h5>Dynamic Cards</h5> -->
         </div>
       </section>
     </div>
