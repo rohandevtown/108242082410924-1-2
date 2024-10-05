@@ -26,7 +26,7 @@
     />
   </head>
 
-  <body>
+  <body onload="loadInitialData()">
     <!--Open Task Modal Btn -->
     <!-- <button
       type="button"
@@ -138,7 +138,9 @@
               </div>
 
               <div class="mb-3">
-                <label for="tags" class="form-label">Task Description</label>
+                <label for="taskDescription" class="form-label"
+                  >Task Description</label
+                >
                 <!-- <input
                   type="text"
                   class="form-control"
@@ -146,7 +148,7 @@
                   placeholder="enter the task type"
                 /> -->
                 <textarea
-                  id="tags"
+                  id="taskDescription"
                   placeholder="enter the task decription"
                   class="form-control"
                 ></textarea>
@@ -161,7 +163,13 @@
             >
               Close
             </button>
-            <button type="button" class="btn btn-primary">Save changes</button>
+            <button
+              type="button"
+              class="btn btn-primary"
+              onclick="handleSbmitBtn()"
+            >
+              Save changes
+            </button>
           </div>
         </div>
       </div>
